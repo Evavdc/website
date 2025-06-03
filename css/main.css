@@ -1,0 +1,429 @@
+
+.hide-mobile{ 
+    display: none;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: rgb(249, 248, 255);
+    margin:0;
+    font-family: 'inter', serif;
+    overflow-x: clip;
+}
+
+html {
+    overflow-x: clip;
+    }
+
+.wrap  {
+   margin: 2em;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    z-index: 1;
+}
+
+header::before {
+    display: block;
+        content: "";
+        position: absolute;
+        left: -100vw;
+        right: -100vw;
+        top: 0;
+        bottom: 0;
+        background: rgba(240, 240, 247, 0);
+        z-index: -1;
+    }
+nav ul{ 
+    background-color: rgba(255, 255, 255, 0.644);
+    position: fixed;
+    z-index: 999;  
+    top: 0;
+    right: 0;
+    height: 100vh;
+    margin: 0;
+    list-style: none;
+    text-align: right; 
+    padding: 2em;
+    transform: translateX(100%);
+    transition: transform 0.5s ease-in-out; 
+
+    li {
+        margin: 2em 0;     
+       
+        &:nth-of-type(1){
+            margin-bottom: 4em;
+        }
+        a{
+            color: rgb(177, 147, 206);
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.5rem;
+
+            &:hover{
+                color: hsl(300, 87%, 46%);
+                
+            }
+        }
+    }
+}
+
+
+.open{
+    transform: translateX(0%);
+}
+
+
+h1{
+    text-align: center;
+}
+h1{
+    margin-top: 0em;
+}
+
+p{
+    font-size: 1rem;
+    line-height: 1.5;   
+}
+
+.arrow{
+    display: block;
+   /* margin-left: 700px;*/
+   width: 50px;
+   margin: auto;
+    margin-top: 15px;
+    
+}
+
+.image-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    scroll-margin-top: 1rem;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+  }
+
+.image-container a {
+    display: block;
+    height: 600px;
+    width: calc(50% - 1rem);
+    overflow: hidden;
+    position: relative;
+    color: aliceblue;
+}
+
+.image-container a:hover {
+    div {
+        transform: translateY(0%);
+    }
+}
+
+.image-container div {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+    padding: 1rem;
+    background-color: rgba(178, 147, 206, 0.466);
+    transform: translateY(100%);
+    transition: transform .2s ease;
+}
+
+.image-container a img {
+    object-fit: cover;
+    height: 100%;
+}
+
+
+.item_1 {
+    text-align: left;
+}
+
+.item_2 {
+    text-align: right;
+}
+
+.item_3 {
+    clear: left;
+}
+
+.item_1 img {
+    width: 50%;
+    height: auto;
+}
+.item_2 img {
+    width: 50%;
+    height: auto;
+}
+.item_3 img {
+    width: 50%;
+    height: auto;
+}
+.item_4 img{
+    width: 300px;
+    height: auto;
+}
+
+.row {
+    gap: 1rem;
+    display: flex;
+    padding: 2rem 0;
+    flex-wrap: wrap;
+    padding-left: 150px;
+    padding-right: 150px;
+    padding-top: 100px;
+}
+
+.row__item {
+    width: 100%;
+}
+
+.textaboutme{
+    padding: 0;
+}
+
+
+
+.titleproject{
+    color: rgb(177, 147, 206);
+    text-align: left;
+}
+
+img {
+    max-width: 100%;
+}
+
+.row img {
+    object-fit: contain;
+    height: auto;
+
+}
+
+p:first-child {
+    margin-top: 0;
+}
+
+ol li {
+    margin-bottom: 1rem;
+}
+.portfoliotitle{
+    
+    margin-top: 10rem;
+    color: rgb(177, 147, 206);
+}
+
+.clear{
+    clear: both;
+}
+.aboutme{
+    margin-top: 10rem;
+    color: aliceblue;
+       
+    
+}
+.aboutme p{
+    text-align: justify;
+
+}
+
+.aboutme{
+    position: relative;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background: rgb(177, 147, 206);
+    padding-left: 1em;
+    padding-right: 1em;
+    width: calc(100%+2em);
+}
+    
+.line{
+    width: 500px;
+    position: absolute;
+    border-bottom: 3px solid rgb(255, 255, 255);
+}
+    
+
+.contactme{
+    margin-top: 10rem;
+    margin-bottom: 0;   
+    color: rgb(177, 147, 206);
+    padding-left: 1em;
+}
+
+
+#knop{
+    display: none ;
+    position: sticky;
+    bottom: 20px;
+    left: 90%;
+    z-index: 99;    
+    border: none;
+    outline: none;
+    background-color: rgba(223, 138, 216, 0.507);
+    color: rgb(17, 48, 133);
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 2px;
+    font-size: 10px; 
+}
+
+#knop:hover{
+    background-color: rgba(252, 54, 242, 0.61);
+}
+
+
+.slider-frame{  
+    height: 600px;
+    width: calc(100% + 400px);
+    margin-top: -178px;
+    margin-left: -200px;
+    margin-right: -200px;
+    z-index: -1;    
+}
+
+
+
+.slide-images{
+    height: 600px;
+}
+
+.image-container2{
+    height: 600px;
+
+}
+
+.image-container2 img{
+    height: 600px;
+    object-fit: cover;
+    width: 100%;
+}
+
+* {
+    box-sizing: border-box;
+  }
+  
+  
+  .column {
+    float: left;
+    width: 40%;
+    padding: 0px;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+.mail{
+    text-decoration: none;
+    color: black;
+}
+
+  .linkedIn-link{
+    text-decoration: none;
+    color: black;
+    padding-bottom: 50px;
+  }
+
+
+@media( min-width: 790px){ 
+    .wrap{
+        margin: 0 4em;
+    }
+    .hide-desktop{
+         display: none;
+    }
+    .hide-mobile{
+        display: block;
+    }
+    .header-left{ 
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 1em;
+
+        .divider{ 
+            height: 80px;
+            width: 2px;
+            border-right: 2px solid rgba(223, 138, 216, 0.507);
+
+        }
+        a{
+            text-decoration: none;
+            color: rgb(177, 147, 206);
+            font-size: 1.5rem;
+            font-weight: bold;
+            &:hover{
+                color: hsl(300, 87%, 46%);
+                
+            }
+            
+        }
+
+    }
+    nav ul{
+        position: right;
+        background: none;
+        display: flex;
+        gap: 3em;
+        height: auto;
+        transform: translateX(0%);
+        }
+        li a{
+            font-size: 1.2rem;
+        }
+    
+}
+
+
+
+
+
+@media (min-width: 1250px){
+    
+    h1 img{
+        margin: 0;
+    }
+
+    nav ul {
+        position: relative;
+    }
+
+    .row__item {
+        width: calc(50% - .5rem);
+        
+    }
+
+    .image-container a {
+        width: calc(25% - 1rem);
+    }
+    
+}
+
+@media screen and (max-width: 1050px) {
+    
+    .column {
+      width: 100%;
+    }
+    
+    .arrow{
+        display: none;
+    }
+    .row{
+        padding: 15px;
+    }
+    .container{
+        padding: 5px;
+    }
+}    
+
+    
